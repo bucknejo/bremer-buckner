@@ -1,0 +1,377 @@
+.App {
+  /*text-align: center;*/
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* bremer-buckner */
+
+/*
+*  Color Scheme:
+*
+*  Blue 01: #465a9b
+*  Blue 02: #527de8
+*  Blue 03: #6493ed
+*  Gray 01: #666666
+*  Gray 02: #999999
+*  Gray 03: #b8b8b8
+*
+*
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+body {
+  font-family: 'Lato', Arial, sans-serif;
+  color: #333;
+  height: 100%;
+}
+
+/* all */
+
+.site-uc-01 {
+  color: #465a9b;
+  font-size: 1.4em;
+}
+
+.site-uc-02 {
+  color: #6493ed;
+  font-size: 1.1em;
+}
+
+.site-h1-light-blue {
+  color: #465a9b;
+}
+
+img.center {
+  display: block;
+  margin: 0 auto;
+}
+
+.col-centered{
+  float: none;
+  margin: 0 auto;
+}
+
+section {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+hr.jtb {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #999;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* dev */
+
+.dev-border {border: 1px solid #990000;}
+.dev-section {height: 200px;}
+.dev-image-placeholder {border: 2px solid #666; height:300px; width: 1040px; margin: 5px 0;}
+
+/* top.html */
+#site-top-menu {position: absolute; bottom: 0; right: 20px;}
+#site-top-menu li {display: inline; list-style-type: none; padding-left: 10px;}
+#site-top-menu li a {text-decoration: none; color: #666; outline: 0}
+#site-top-menu li a:hover {border-bottom: 2px solid #6493ed;}
+#site-top-menu li a.ng-active-click, #site-top-menu li a:active {border-bottom: 2px solid #527de8;}
+#site-top-menu li a.site-top-menu-selected {border-bottom: 2px solid #465a9b;}
+
+#site-top-logo {position: absolute; bottom: 0; left: 20px;}
+
+.site-top-size {height: 100px; border-bottom: 1px solid #666666; margin-bottom: 5px;}
+
+/* bottom.hmtl */
+
+.site-bottom {
+  border-top: 1px solid #333;
+  background-color: #666;
+  color: #fff;
+  font-size: .9em;
+  padding: 20px;
+}
+
+#site-bottom-contact {}
+#site-bottom-contact li {list-style-type: none; line-height: 1.1em;}
+
+a.site-bottom-anchor-01 {color: #fff; font-weight: normal; text-decoration: none;}
+a.site-bottom-anchor-01:hover {color: #fff; font-weight: normal; text-decoration: underline;}
+a.site-bottom-anchor-01:visited {color: #fff; font-weight: normal; text-decoration: none;}
+
+/* home.html */
+
+#home-container-awards {
+  /*background-color: #465a9b; */
+  background-color: #fff;
+  color: #333;
+  font-size: 2em;
+  padding: 25px;
+  margin: 25px 0;
+  text-align: center;
+}
+
+#home-container-profiles {
+
+  color: #666;
+  font-size: 1em;
+  margin-top: 25px;
+  padding: 25px;
+}
+.home-headshot {
+  cursor: pointer;
+  cursor: hand;
+  margin-top:25px;
+}
+
+.home-headshot.right {
+  float: right;
+}
+
+.home-headshot.left {
+  float: left;
+}
+
+.home-headshot.image {
+  background-color: #fff;
+  border:2px solid #666;
+  margin: 50px 20px 10px 20px;
+  padding: 10px;
+}
+
+.home-headshot-caption {
+  font-weight: bold;
+  font-size: .9em;
+  text-align: center;
+}
+
+.home-headshot-caption span {
+  font-size: 1.8em;
+}
+
+open-new-tab {
+  color: #527de8;
+}
+
+#home-container-message {
+  margin: 30px;
+}
+
+#home-container-consultation {
+  background-color: #666;
+  color: #fff;
+  font-size: 1em;
+  margin: 25px 0;
+  padding: 25px;
+  text-align: center;
+}
+
+#home-container-help {
+  padding: 25px;
+  text-align: center;
+}
+
+#home-container-services {
+  background-color: #6493ed;
+  color: #fff;
+  font-size: 1em;
+  padding: 25px;
+  text-align: center;
+}
+
+table.home-services-practice-areas {margin: 0 auto;}
+table.home-services-practice-areas tr {border: 0}
+table.home-services-practice-areas tr td {border: 0}
+table.home-services-practice-areas tr td div.pa {
+  border: 2px solid #fff;
+  cursor: pointer;
+  cursor: hand;
+  margin: 5px;
+  padding: 5px;
+}
+
+.pa-hover {
+  background-color: #fff;
+  color: #6493ed;
+}
+
+#home-container-location {
+  padding: 25px;
+  text-align: center;
+}
+
+a.home-container-link {
+  color: #fff;
+  text-decoration: none;
+}
+a.home-container-link:active {
+  color: #fff;
+  text-decoration: none;
+}
+a.home-container-link:hover {
+  color: #fff;
+  text-decoration: none;
+}
+a.home-container-link:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-logo {
+  margin: 5px;
+}
+#main {
+  position: relative;
+}
+
+#slide {
+  position: absolute;
+  right: 20px;
+  bottom: 0px;
+  transition: 2s;
+  opacity: 0;
+}
+
+
+#main:hover #slide {
+  transition: 2s;
+  opacity: 1;
+}
+
+/* about.html */
+
+#about-container-top {
+  margin: 25px;
+}
+
+h5.about-profile-h5 {
+  color: #465a9b;
+  font-weight: bold;
+}
+.about-profile-01 {padding: 0}
+.about-profile-01 li {list-style-type: none;}
+
+a.about-attorney-anchor {color: #000; text-decoration: none;}
+a.about-attorney-anchor:hover {color: #000; text-decoration: none;}
+a.about-attorney-anchor:active {color: #000; text-decoration: none;}
+a.about-attorney-anchor:visited {color: #000; text-decoration: none;}
+
+#super_lawyers_badge {
+  margin:40px 0; padding:0; line-height:1; font-size:1em; font:100 0.8em/1em 'Arial',sans-serif; position:relative; outline:none; border:none;
+}
+
+#large_super_lawyers_badge {
+  height:150px; width:180px; background-image:url('http://i.superlawyers.com/shared/badge/lawyer/basic/large_gray-orange.png'); text-align:center; outline:none; border:none; line-height:1; font-size:100%
+}
+
+#large_super_lawyers_badge table {
+  margin: 0; padding:0; outline:none; border: none;
+}
+
+#sl-row-01 {
+  height:75px; vertical-align:bottom; margin: 0; padding:0; outline:none; border: none;
+}
+
+#sl-row-01-cell-01 {
+  margin: 0; padding:0; outline:none; border: none;
+}
+
+#sl-row-01-cell-01-a-01 {
+  height:75px; width:150px; display:block; text-decoration:none; margin:0; padding:0; text-align:center; outline:none; border:none;
+}
+
+#sl-row-02 {
+  margin: 0; padding:0; line-height: 1; font-size: 100%; outline:none; border: none;
+}
+
+#sl-row-02-cell-01 {
+  height:0px; vertical-align:middle; margin: 0; padding:0 10px; line-height: 1; font-size: 100%; outline:none; border:none;
+}
+
+#sl-row-02-cell-01-a-01 {
+  height:40px; width:150px; display:block; text-decoration:none; margin:0; padding:0; line-height:1; text-align:center; font-family:arial,sans-serif; color:rgb(255,255,255); font-size:16px; font-weight:bold; outline:none; border:none;
+}
+
+#sl-row-03 {
+  margin: 0; padding:0; line-height: 1; font-size: 100%; outline:none; border: none;
+}
+
+#sl-row-03-cell-01 {
+  height:26px; vertical-align:bottom; margin: 0; padding:0; line-height: 1; font-size: 100%; outline:none; border: none;
+}
+
+#sl-row-03-cell-01-a-01 {
+  height:20px; width:150px; display:block; text-decoration:none; margin:0; padding:0; line-height:1; font-size:100%; outline:none; border:none;
+}
+
+
+
+/* services.html */
+
+#services-container-top {
+  margin: 25px;
+}
+
+.services-practice-areas-display {
+  display: block;
+}
+
+#services-practice-areas-menu {padding: 0}
+#services-practice-areas-menu li {list-style-type: none; padding-left: 0px;}
+#services-practice-areas-menu li a {text-decoration: none; color: #666; outline: 0}
+#services-practice-areas-menu li a:hover {border-bottom: 2px solid #6493ed;}
+#services-practice-areas-menu li a.ng-active-click, #site-top-menu li a:active {border-bottom: 2px solid #527de8;}
+#services-practice-areas-menu li a.services-practice-areas-menu-selected {border-bottom: 2px solid #465a9b;}
+
+/* contact */
+
+#contact-container-top {
+  margin: 25px;
+}
+
+.contact-address-01 {
+  color: #465a9b;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.contact-address-02 {
+  font-size: 1.5em;
+}
+
+.contact-method {
+  color: #527de8;
+  font-weight: bold;
+  font-size: .8em;
+}
+
+.contact-method.bottom {
+  color: #333;
+}

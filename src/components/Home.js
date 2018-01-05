@@ -98,7 +98,7 @@ class Home extends Component {
 
                 <section id="home-container-location">
                     <h1 className="site-h1-light-blue">How To Get Here</h1>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3015.807906954766!2d-74.0366915851209!3d40.89802843415166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2fa0b9f0a7893%3A0x7e5216dc08abf01b!2s2+University+Plaza!5e0!3m2!1sen!2sus!4v1464357346396" width="600" height="450">&nbsp;</iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3015.807906954766!2d-74.0366915851209!3d40.89802843415166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2fa0b9f0a7893%3A0x7e5216dc08abf01b!2s2+University+Plaza!5e0!3m2!1sen!2sus!4v1464357346396" width="600" height="450" title="Office Location">&nbsp;</iframe>
 
                 </section>
 

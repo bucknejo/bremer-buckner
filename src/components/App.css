@@ -375,3 +375,9 @@ a.about-attorney-anchor:visited {color: #000; text-decoration: none;}
 .contact-method.bottom {
   color: #333;
 }
+
+/* message */
+
+.button-spacing {
+  margin: 5px;
+}

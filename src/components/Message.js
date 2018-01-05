@@ -33,6 +33,8 @@ class Message extends React.Component {
                 value: '',
                 touched: false
             },
+            sent: false,
+            something: "something"
         };
     }
 
@@ -48,23 +50,17 @@ class Message extends React.Component {
         switch (prop) {
             case 'firstName':
                 if (!this.state.firstName.touched || this.state.firstName.value.length !== 0) return 'success'; else return 'error';
-                break;
             case 'lastName':
                 if (!this.state.lastName.touched || this.state.lastName.value.length !== 0) return 'success'; else return 'error';
-                break;
             case 'email':
                 if (!this.state.email.touched || this.validateEmail(this.state.email.value)) return 'success'; else return 'error';
-                break;
             case 'phone':
                 const matched = this.state.phone.value.match(/\d/g);
                 if (!this.state.phone.touched || (matched && matched.length===10)) return 'success'; else return 'error';
-                break;
             case 'practiceArea':
                 if (!this.state.practiceArea.touched || this.state.practiceArea.value.length !== 0) return 'success'; else return 'error';
-                break;
             case 'note':
                 if (!this.state.note.touched || this.state.note.value.length !== 0) return 'success'; else return 'error';
-                break;
 
             default:
                 return null;
@@ -86,6 +82,42 @@ class Message extends React.Component {
         };
 
         this.setState({[name]: control, group: group});
+    }
+
+    sendMessage(e) {
+        console.log(e);
+
+        const subject = "message test";
+
+        const message = {
+            firstName: this.state.firstName.value,
+            lastName: this.state.lastName.value,
+            email: this.state.email.value,
+            subject: subject,
+            note: this.state.note.value,
+            practice: this.state.practiceArea.value,
+            phone: this.state.phone.value
+        };
+
+        fetch('http://localhost:8095/bremer-buckner/service/message/send', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(message)
+        })
+            .then(result => result.json())
+            .then(data => {
+                console.log("This is the data" + data);
+                this.setState({sent: data});
+            }
+        );
+
+    }
+
+    resetMessage(e) {
+        console.log(e);
     }
 
     render() {
@@ -196,8 +228,16 @@ class Message extends React.Component {
                 <div className="row">
                     <div className="col-md-12 text-center">
                         <div className="center-block">
-                            <button type="button" className="btn btn-primary">Send</button>
-                            <button type="button" className="btn btn-primary">Reset</button>
+                            <button type="button" className="btn btn-primary button-spacing" onClick={(e) => this.sendMessage(e)}>Send</button>
+                            <button type="button" className="btn btn-primary button-spacing" onClick={(e) => this.resetMessage(e)}>Reset</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="row">
+                    <div className="col-md-12 text-center">
+                        <div className="center-block">
+                            Message Sent: {this.state.sent + ""}
                         </div>
                     </div>
                 </div>
